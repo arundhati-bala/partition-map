@@ -67,10 +67,10 @@ onChapterEnter: [
   ],
 },
 'part_3': {duration: 7000,
-center: [74.884868, 26.799180],
-bearing: -93.60,
-zoom: 4.52,
-pitch: 24.91,
+center: [73.885837, 27.908822],
+bearing: -150.40,
+zoom: 4.55,
+pitch: 16.00,
 onChapterEnter: [
     {
         layer: 'manto_distance',
