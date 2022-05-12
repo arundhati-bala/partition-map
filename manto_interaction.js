@@ -1,5 +1,4 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmRoYXRpMDgiLCJhIjoiY2t3d2FwNjl0MDF1bTJucnJua3VldnN1ZCJ9.9YCEBV7RfCfhoEdb6wTTlw';
-// map.setLayoutProperty('your-layer', 'visibility', 'visible');  
 
 const map = new mapboxgl.Map({
 container: 'map',
