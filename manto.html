@@ -54,6 +54,13 @@
     <p>
       As we zoom in further, we see where the author writes about incidents of conflict/violence and harmony on the characters’ paths. Manto’s stories are stories about partition, but they are also stories about people being betrayed in their new countries and old. Where do negative interactions occur more often on the paths? What do these stories say about negative interactions and positive ones in relation to the space its characters occupy? Does the character’s gender matter in where they are facing the conflict? Are the women in the story more likely to be involved in matters of harmony versus the men while on their migratory path? And what does thinking about these questions tell us about the event of partition itself?	
     </p>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedPaths" checked onclick="myFunction1()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Paths</label>
+      <br>
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedInt" checked onclick="myFunction1()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Interactions</label>
+    </div>
   </section>
   <section id="part_4">
     <h1>MANTO'S ORIGINAL HOME</h1>
@@ -69,6 +76,11 @@
       Manto lived a substantial part of his adult life in Bombay. It was a city he loved, so much so that he was once quoted saying, “I am a walking, talking Bombay”. He was forced to move out of the city during partition and that sadness, that betrayal formed a major emotional theme of his writing.
 So while we map how these characters move, there is another question that becomes important. The question of the author. Since Manto migrated from India to Pakistan, does he write about characters that migrate the same way? And does he write about characters going through conflict closer to their home towns or the towns they migrated to? Does where Manto was from play any role in how he writes? How does this now complicate the question of partition further? 
     </p>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDistH" checked onclick="myFunction2()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Distances</label>
+      <br>
+    </div>
   </section>
   <section id="part_5">
     <h1>MANTO'S MIGRATORY HOME </h1>
@@ -90,6 +102,11 @@ So while we map how these characters move, there is another question that become
     <p>
       “Manto had been implacably opposed to partition and had refused to go to the newly formed Pakistan. One evening he was sitting drinking with his Hindu colleagues at the offices of the newspaper where he worked when one of them remarked that, were it not for the fact they were friends, he would have killed Manto. The next day Manto packed his bags and took his family to Lahore, and it was here that he wrote the stories that revisited the brutality and absurdities of partition.” (https://www.theguardian.com/books/2016/jun/11/saadat-hasan-manto-short-stories-partition-pakistan)
     </p>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDistD" checked onclick="myFunction3()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Distances</label>
+      <br>
+    </div>
   </section>
   <section id="part_6">
     <h1>OVERVIEW</h1>
@@ -101,6 +118,41 @@ So while we map how these characters move, there is another question that become
   </section>
 
 </div>
+<script>
+  function myFunction1() {
+  var checkBox1 = document.getElementById("flexSwitchCheckCheckedPaths");
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedInt");
+
+  if (checkBox1.checked == true){
+    map.setLayoutProperty('paths', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('paths', 'visibility', 'none');
+  }
+  if (checkBox2.checked == true){
+    map.setLayoutProperty('interactions', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('interactions', 'visibility', 'none');
+  }
+}
+function myFunction2() {
+  var checkBox1 = document.getElementById("flexSwitchCheckCheckedDistH");
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedDistD");
+
+  if (checkBox1.checked == true){
+    map.setLayoutProperty('home-rings', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('home-rings', 'visibility', 'none');
+  }
+  }
+function myFunction3() {
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedDistD");
+  if (checkBox2.checked == true){
+    map.setLayoutProperty('destination-rings', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('destination-rings', 'visibility', 'none');
+  }
+}
+</script>
 <script src="manto_interaction.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

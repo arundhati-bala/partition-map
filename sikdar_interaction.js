@@ -12,6 +12,9 @@ pitch: 0,
 mapAnimation: 'flyTo',
 });
 
+map.addControl(new mapboxgl.NavigationControl());
+
+
 const chapters = {
 'part_1':{
     bearing:0,
@@ -104,7 +107,7 @@ if (isElementOnScreen(chapterName)) {
     {
         // map.setLayoutProperty('manto_distance', 'visibility', 'none');
         map.setLayoutProperty('destination-rings', 'visibility', 'none');
-        map.setLayoutProperty('destination-point', 'visibility', 'visible');
+        map.setLayoutProperty('destination-point', 'visibility', 'none');
         map.setLayoutProperty('home-rings', 'visibility', 'none');
         map.setLayoutProperty('home-point', 'visibility', 'none');
         map.setLayoutProperty('interactions', 'visibility', 'visible');

@@ -10,6 +10,7 @@ zoom: 3.68,
 pitch: 0,
 mapAnimation: 'flyTo',
 });
+map.addControl(new mapboxgl.NavigationControl());
 
 const chapters = {
 'part_1':{

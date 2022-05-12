@@ -52,8 +52,16 @@
     <br>
     <p>
         As we zoom in further, we see where the author writes about incidents of conflict/violence and harmony on the characters’ paths. Sikdar writes about a home lost, a home tried to be forgotten, a home that one is not able to forget. As characters move homes and move lives, where do negative interactions occur more often on the paths? What do these stories say about negative interactions and positive ones in relation to the space its characters occupy? Does the character’s gender matter in where they are facing the conflict? Are the women in the story more likely to be involved in matters of harmony versus the men while on their migratory path? And what does thinking about these questions tell us about the event of partition itself?    </p>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedPaths" checked onclick="myFunction1()">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Paths</label>
+            <br>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedInt" checked onclick="myFunction1()">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Interactions</label>
+          </div>
       </section>
-  <section id="part_4">
+      
+      <section id="part_4">
     <h1>SIKDAR'S ORIGINAL HOME</h1>
     <i class="bi bi-circle" style = "color: #3cad10;"> Postive Interactions</i>
     <br>
@@ -66,6 +74,11 @@
     <p>
         Sunanda Sikdar was born in Dighpait (in present Bangladesh)  in the year of the partition - 1947, but after the migratory exodus took place. Still, her family was forced to move to Indian Kolkata in the 1950s. Sunana moved across the border when she was very young. As we map how the characters in her story move, there is another question that becomes important. The question of the author. Since Sikdar’s book is a memoir, the question of the author becomes more obvious, but not less important. As Sikdar migrated from erstwhile Pakistan to India, does she write about characters that migrate the same way? And does she write about characters going through conflict closer to their home towns or the towns they migrated to? Does where Sikdar was from play any role in how she writes? How does this now complicate the question of partition further?
     </p>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDistH" checked onclick="myFunction2()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Distances</label>
+      <br>
+    </div>
   </section>
   <section id="part_5">
     <h1>SIKDAR'S MIGRATORY HOME </h1>
@@ -82,17 +95,58 @@
     <p>
         Sikdar Migrated to Kolkata when she was a young girl. How must it have been to leave young friends behind, to leave a life behind when you are a child? How does this impact how the author perceives violence and harmony in relation to where she migrated to?
     </p>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDistD" checked onclick="myFunction3()">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Distances</label>
+      <br>
+    </div>
   </section>
   <section id="part_6">
     <h1>OVERVIEW</h1>
     <p>
-        This map wants to look at not only the fiction around partition, but the real-life character who went through partition and then wrote about partition, hoping to give the people who experience the map multiple layers (quite literally) to think through; and also an understanding that at the end of it, all the narratives we visualize are narratives - like in the event of partition, perhaps fact is not always easy to discern and maybe it really isn’t about the facts we discern but about what people felt, or thought they felt. Thus, here, the author’s imagination (their stories) and what we know about their life - come together to let the viewers experience partition as a composite of all these narratives , and derive their own questions about migration, gender, violence/conflict and harmony. 
+        This map wants to look at not only the fiction around partition, but the real-life character who went through partition and then wrote about partition, hoping to give the people who experience the map multiple layers (quite literally) to think through; and also an understanding that at the end of it, all the narratives we visualize are narratives - like in the event of partition, perhaps fact is not always easy to discern and maybe it really isn’t about the facts we discern but about what people felt, or thought they felt. Thus, here, the author’s imagination (their stories) and what we know about their life - come together to let the viewers experience partition as a composite of all these narratives , and derive their own questions about migration, gender, violence/conflict and harmony. </p>
+        <br>
         <a href="manto.html" style = "margin: 10px;"class="btn btn-outline-secondary">Explore Mottled Dawn</a>
       <a href="index.html" style = "margin: 10px;"class="btn btn-outline-secondary">Go Back Home</a>
 
   </section>
 
 </div>
+<script>
+  function myFunction1() {
+  var checkBox1 = document.getElementById("flexSwitchCheckCheckedPaths");
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedInt");
+
+  if (checkBox1.checked == true){
+    map.setLayoutProperty('paths', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('paths', 'visibility', 'none');
+  }
+  if (checkBox2.checked == true){
+    map.setLayoutProperty('interactions', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('interactions', 'visibility', 'none');
+  }
+}
+function myFunction2() {
+  var checkBox1 = document.getElementById("flexSwitchCheckCheckedDistH");
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedDistD");
+
+  if (checkBox1.checked == true){
+    map.setLayoutProperty('home-rings', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('home-rings', 'visibility', 'none');
+  }
+  }
+function myFunction3() {
+  var checkBox2 = document.getElementById("flexSwitchCheckCheckedDistD");
+  if (checkBox2.checked == true){
+    map.setLayoutProperty('destination-rings', 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty('destination-rings', 'visibility', 'none');
+  }
+}
+</script>
 <script src="sikdar_interaction.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
