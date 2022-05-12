@@ -73,3 +73,34 @@ section:last-child {
 border-bottom: none;
 margin-bottom: 400px;
 }
+
+.titleimage {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+img {
+  padding-top: 5vh;
+}
+.btns {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: row;
+  display: flex;
+}
+
+.footer {
+  background-color: darkslategrey;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: row;
+  display: flex;
+}

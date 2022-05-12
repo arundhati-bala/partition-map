@@ -5,70 +5,33 @@
   <meta charset="utf-8">
   <title>Gender, Migration and Literature</title>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-
-  <!-- Customization files -->
-
-
-  <!-- Be sure to set the API key and layer style in the JS file -->
-  <style>
-  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-  </style>
   <link href='custom.css' rel='stylesheet' />
 </head>
 
 <body>
-  <!-- This is where your map goes -->
-
-<div id='map'></div>
-
-<div id="features">
-  <section id="part_1" class="active">
-    <img src="titleimage.png" class ="title" width="100%">
-    <h1>GENDER, MIGRATION AND LITERATURE</h1>
-    <p>This map wants to look at not only the fiction around partition, but the real-life character (author) who went through partition and then wrote about partition, hoping to give the people who experience the map multiple layers (quite literally) to think through.
-    </p>
-  </section>
-  <section id="part_2">
-    <h1>GENDER AND DISPLACEMENT</h1>
-    <p>
-      Saadat Hasan Manto’s stories are stories about partition, but they are also stories about people being betrayed in their new countries and old. But where did these characters come from and go to? Where did they face violence and where did they face harmony?  What do these stories say about negative interactions and positive ones in relation to the space its characters occupy? Does the character’s gender matter in where they are facing the conflict? Are the women in the story more likely to be involved in matters of harmony versus the men while on their migratory path? And what does thinking about these questions tell us about the event of partition itself?	    </p>
-  </section>
-  <section id="part_3">
-    <h1>PATH INTERACTIONS</h1>
-    <p>
-      In Manto’s book, Mottled down, characters of different genders travel various distances to reach places supposed to be ‘safe’. But, the map doesn’t necessarily tell that story. The stories, just like routes, are not necessarily simple or direct. As Book Review says, “It is about looking at this brutal world from a writer’s perspective. A world where women are not safe, mistrust prevails, people kill in the name of religion. Interestingly, this book was written before India became a free country but the stories look so real and true even 72 years later. The writer Manto was a colonial Indian and Pakistani writer, and author born in Ludhiana, India. Saadat Hasan Manto was posthumously awarded the Nishan-e-Imtiaz award (Distinguished Service to Pakistan Award) by the Government of Pakistan. Though he had many trials in the court for obscene writing and it was only after he died, the country gave him the acknowledgement he deserved.”
-(Book Review- Sadat Hasan Manto’s Mottled Dawn – Square & Beyond (squareandbeyond.com))
-          </p>
-  </section>
-  <section id="part_4">
-    <h1>AUTHOR'S ORIGINAL HOME</h1>
-    <p>
-      Manto, who lived in Bombay until 1948 and worked there as a successful screenplay writer for the film industry, finally had to flee to Pakistan. He had been accused of favoring Muslims.
-      In his volume of short stories, "Mottled Dawn," Manto not only depicts the horror, he also tries to process it, among other means, with a scathing, desperate sense of humor, which is always directed at the perpetrators and preserves the dignity of the victims. He keeps his distance, favoring neither the Muslims nor the Hindus.
-      (https://en.qantara.de/content/saadat-hassan-mantos-mottled-dawn-stories-about-the-partition-of-india-and-pakistan)
-          </p>
-  </section>
-  <section id="part_5">
-    <h1>AUTHOR'S MIGRATORY HOME </h1>
-    <p>
-      But while we map how these characters move, there is a question that becomes important. The question of the author. Since Manto migrated from India to Pakistan, does he write about characters that migrate the same way? And does he write about characters going through conflict closer to their home towns or the towns they migrated to? Does where Manto was from play any role in how he writes? How does this now complicate the question of partition further? 
-    </p>
-    <p>
-      “Manto had been implacably opposed to partition and had refused to go to the newly formed Pakistan. One evening he was sitting drinking with his Hindu colleagues at the offices of the newspaper where he worked when one of them remarked that, were it not for the fact they were friends, he would have killed Manto. The next day Manto packed his bags and took his family to Lahore, and it was here that he wrote the stories that revisited the brutality and absurdities of partition.” (https://www.theguardian.com/books/2016/jun/11/saadat-hasan-manto-short-stories-partition-pakistan)
-    </p>
-  </section>
-  <section id="part_6">
-    <h1>OVERVIEW</h1>
-    <p>
-      This map wants to look at not only the fiction around partition, but the real-life character who went through partition and then wrote about partition, hoping to give the people who experience the map multiple layers (quite literally) to think through; and also an understanding that at the end of it, all the narratives we visualize are narratives - like in the event of partition, perhaps fact is not always easy to discern and maybe it really isn’t about the facts we discern but about what people felt, or thought they felt. Thus, here, the author’s imagination (their stories) and what we know about their life - come together to let the viewers experience partition as a composite of all these narratives , and derive their own questions about migration, gender, violence/conflict and harmony. 
-    </p>
-  </section>
-
+<div class = "titleimage">
+  <img src="titleimage.png" alt="">
+  <h1>GENDER, MIGRATION, AND PARTITION LITERATURE</h1>
+  <p style="padding: 0 30px; text-align: center;">
+    This project aims to view partition through the narratives of fiction as well as the real life narratives of those who crafted the fiction. We hope explorers of the map will be able to ask questions from various perspectives about gender, migration and the violence as well as harmony that came along with the partition. 
+  </p>
+  <p>For this specific scrollytelling site, we chose Saadat Hasan Manto's <em>Mottled Dawn</em> (1997) and Sunanda Sikdar's <em>A Life Long Ago</em> (2012).</p>
+  <p>Choose which title you'd like to explore:</p>
 </div>
-<script src="scroll.js"></script>
+<div class = "btns">
+  <a href="sikdar.html" style = "margin: 10px;"class="btn btn-outline-secondary">A Life Long Ago</a>
+  <a href="manto.html" style = "margin: 10px;"class="btn btn-outline-secondary">Mottled Dawn</a>
+</div>
+<br>
+<br>
+<div class = "footer">
+  <p style = "color: aliceblue;">Made by Arundhati Balasubramaniam, Avani Maroo, Mahek Jangda, Ayush Agarwal</p>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
